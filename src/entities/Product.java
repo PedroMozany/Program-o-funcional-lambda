@@ -28,7 +28,9 @@ public class Product {
 	public static String staticUpperCaserName(Product p) {
 		return p.getName().toUpperCase();
 	}
-
+	public  String nonStaticUpperCaserName() {
+		return name.toUpperCase();
+	}
 	@Override
 	public String toString() {
 		return name + "," + String.format("%.2f", price);
